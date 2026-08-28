@@ -1,0 +1,27 @@
+{
+  "name": "tech-articles",
+  "version": "1.0.0",
+  "description": "Qiita articles managed with qiita-cli",
+  "scripts": {
+    "preview": "qiita preview",
+    "new": "qiita new",
+    "publish": "qiita publish --all",
+    "pull": "qiita pull",
+    "login": "qiita login"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momokuomomo-crypto/tech-articles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/momokuomomo-crypto/tech-articles/issues"
+  },
+  "homepage": "https://github.com/momokuomomo-crypto/tech-articles#readme",
+  "devDependencies": {
+    "@qiita/qiita-cli": "^1.10.0"
+  },
+  "private": true
+}
