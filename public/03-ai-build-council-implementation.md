@@ -1,6 +1,19 @@
-# AIに実装させるゲート設計と、自動テスト99件をすり抜けた6件のバグ
-
-[前回](@02)で選ばれた1案を実装する工程です。使ったのは自作のClaude Codeスキル [ai-build-council](https://github.com/momokuomomo-crypto/ai-build-council)。
+---
+title: "AIに実装させるゲート設計と、自動テスト99件をすり抜けた6件のバグ"
+tags:
+  - "AI"
+  - "ClaudeCode"
+  - "テスト"
+  - "生成AI"
+  - "ChromeExtension"
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: false
+---
+前回で選ばれた1案を実装する工程です。使ったのは自作のClaude Codeスキル [ai-build-council](https://github.com/momokuomomo-crypto/ai-build-council)。
 
 この記事の要点は1つです。
 

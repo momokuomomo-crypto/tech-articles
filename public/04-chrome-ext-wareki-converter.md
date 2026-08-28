@@ -1,6 +1,19 @@
-# 和暦変換Chrome拡張を作って公開した — 元号境界の落とし穴と、その実装
-
-[案出し編](@02)で出た55案のうち、実装して[Chromeウェブストアに公開](https://chromewebstore.google.com/detail/pcgbpaagcljfakbhmoiaoekmfbfdfpob)した1本の話です。
+---
+title: "和暦変換Chrome拡張を作って公開した — 元号境界の落とし穴と、その実装"
+tags:
+  - "Java"
+  - "和暦"
+  - "ChromeExtension"
+  - "日付"
+  - "個人開発"
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: false
+---
+案出し編で出た55案のうち、実装して[Chromeウェブストアに公開](https://chromewebstore.google.com/detail/pcgbpaagcljfakbhmoiaoekmfbfdfpob)した1本の話です。
 
 作ったもの：**和暦変換（改元日対応）**（2026-08-05公開）
 
@@ -248,7 +261,7 @@ npm run verify  # ビルド → dist の検査
 
 最初の自動テストは99件でした。**53件の増分は、実機で見つかった6件の不具合の回帰テストと、後から足したポップアップの結合テスト**です。
 
-自動テスト99件が通った状態で実機のChromeに載せたら6件出た、という話は[実装編](@03)に詳しく書きました。うち2件は**要件そのものの誤り**で、テストは要件を正しく反映していました。
+自動テスト99件が通った状態で実機のChromeに載せたら6件出た、という話は実装編に詳しく書きました。うち2件は**要件そのものの誤り**で、テストは要件を正しく反映していました。
 
 ## ストア提出で気をつけたこと
 

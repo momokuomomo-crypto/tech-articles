@@ -1,6 +1,11 @@
-# AI3席会合で55案出したら、在庫が積み上がった話
-
-[前回](@01)の全体像に続いて、案出し工程の詳細です。使ったのは自作のClaude Codeスキル [ai-council_v2](https://github.com/momokuomomo-crypto/ai-council_v2)。
+---
+title: "AI3席会合で55案出したら、在庫が積み上がった話"
+emoji: "🗳️"
+type: "idea"
+topics: ["ai", "claudecode", "個人開発", "生成ai"]
+published: false
+---
+前回の全体像に続いて、案出し工程の詳細です。使ったのは自作のClaude Codeスキル [ai-council_v2](https://github.com/momokuomomo-crypto/ai-council_v2)。
 
 結論から書くと、**案出しはAIで解決しました。解決しなかったのは、出た案をさばくほうです。**
 

@@ -1,5 +1,18 @@
-# AIに任せて一番怖いのは「間違えること」ではなく「埋まっているように見えること」
-
+---
+title: "AIに任せて一番怖いのは「間違えること」ではなく「埋まっているように見えること」"
+tags:
+  - "AI"
+  - "ClaudeCode"
+  - "個人開発"
+  - "生成AI"
+  - "ポエム"
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: false
+---
 AIを仕事に使うようになって、チェックの仕組みを自分で作ることにしました。その記録です。
 
 きっかけは、職務経歴書をAIに書かせたときでした。
@@ -46,9 +59,9 @@ AIが返してきた職務経歴書には、こういう欄が並んでいまし
 
 | | 役割 | 記事 |
 |---|---|---|
-| [ai-council_v2](https://github.com/momokuomomo-crypto/ai-council_v2) | 何を作るかを決める（議論・意思決定） | [案出し編](@02) |
-| [ai-build-council](https://github.com/momokuomomo-crypto/ai-build-council) | どう作るかを決めて実装する | [実装編](@03) |
-| [chrome-ext-wareki-converter](https://github.com/momokuomomo-crypto/chrome-ext-wareki-converter) | 実際に作って公開したもの | [アプリ編](@04) |
+| [ai-council_v2](https://github.com/momokuomomo-crypto/ai-council_v2) | 何を作るかを決める（議論・意思決定） | 案出し編 |
+| [ai-build-council](https://github.com/momokuomomo-crypto/ai-build-council) | どう作るかを決めて実装する | 実装編 |
+| [chrome-ext-wareki-converter](https://github.com/momokuomomo-crypto/chrome-ext-wareki-converter) | 実際に作って公開したもの | アプリ編 |
 
 ```text
  テーマ「Chrome拡張で何を作るか」
@@ -155,8 +168,8 @@ AIが返してきた職務経歴書には、こういう欄が並んでいまし
 ## 各記事へ
 
 1. **本記事** — なぜ作ったか
-2. [AI3席会合で55案出したら、在庫が積み上がった話](@02)
-3. [AIに実装させるゲート設計と、自動テスト99件をすり抜けた6件のバグ](@03)
-4. [和暦変換Chrome拡張を作って公開した — 元号境界の落とし穴と、その実装](@04)
+2. AI3席会合で55案出したら、在庫が積み上がった話
+3. AIに実装させるゲート設計と、自動テスト99件をすり抜けた6件のバグ
+4. 和暦変換Chrome拡張を作って公開した — 元号境界の落とし穴と、その実装
 
 使ったのは **Claude Code**（サブスクリプション）と **Codex CLI**（ChatGPTプラン）だけです。APIの従量課金は使っていません。
