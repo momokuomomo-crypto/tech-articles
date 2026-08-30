@@ -263,3 +263,43 @@ git add -A && git commit -m "記事を追加" && git push   # Zenn
 vim articles.config.json
 npm run sync && npm run qiita:publish && git push
 ```
+
+---
+
+## 記事を自分で編集する
+
+`drafts/<slug>.md` を GitHub 上で直接編集して構いません。**`main` に push すると、
+`public/`（Qiita 用）と `articles/`（Zenn 用）が自動生成されます**
+（`.github/workflows/sync.yml`）。手元で `npm run sync` を実行する必要はありません。
+
+タイトルは本文1行目の `# 見出し` がそのまま使われます。タグ・絵文字を変えたい
+場合は `articles.config.json` を編集します。
+
+### 文章のチェック
+
+公開前に、機械判定できる項目を検査できる。
+
+```bash
+node scripts/lint-ja.mjs    drafts/*.md   # 一文の長さ・冗長表現・文体の統一
+node scripts/lint-style.mjs drafts/*.md   # 日本語技術文書の規範
+```
+
+スクリプトは [ai-writing-council](https://github.com/momokuomomo-crypto/ai-writing-council)
+にある。
+
+### Zenn への反映
+
+`main` への push で自動的に取り込まれる。`published: false` のあいだは下書きの
+ままなので、公開するときは `articles.config.json` の `zenn.published` を `true` に
+する。
+
+**Zenn は、リポジトリからファイルを削除しても記事を削除しない。** 不要になった
+記事は Zenn の画面で消す。
+
+### Qiita への反映
+
+`QIITA_TOKEN` を Secrets に登録し、リポジトリ変数 `QIITA_ENABLED` を `true` に
+すると、`main` への push で自動投稿される。設定しないうちはワークフローが
+実行されない。
+
+手元から投稿する場合は `npm run qiita:publish`。

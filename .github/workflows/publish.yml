@@ -17,6 +17,8 @@ concurrency:
 
 jobs:
   publish_articles:
+    # QIITA_TOKEN が未登録のうちは実行しない（毎回失敗させないため）
+    if: ${{ vars.QIITA_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
