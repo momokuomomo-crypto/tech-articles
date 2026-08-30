@@ -1,4 +1,19 @@
-# 和暦変換で踏む6つの罠をJDKで確かめた
+---
+title: "和暦変換で踏む6つの罠をJDKで確かめた"
+tags:
+  - "Java"
+  - "和暦"
+  - "日付"
+  - "ChromeExtension"
+  - "初心者"
+private: false
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: false
+---
+前の記事で作った拡張のうち、和暦変換のものを取り上げます。単独で読めるように書いてあります。
 
 業務システムで和暦を扱っていると、バグはたいてい元号が切り替わる日の周辺で出ます。しかもその多くは、例外を投げずに誤った値を返します。落ちてくれれば気づけますが、静かに間違った日付が保存されます。
 
