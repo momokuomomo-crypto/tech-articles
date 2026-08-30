@@ -4,32 +4,108 @@
     {
       "slug": "01-ai-council-series-overview",
       "ref": "01",
-      "qiita": { "tags": ["AI", "ClaudeCode", "個人開発", "生成AI", "ポエム"], "private": false },
-      "zenn": { "emoji": "🕳️", "type": "idea", "topics": ["ai", "claudecode", "個人開発", "生成ai"], "published": false },
+      "qiita": {
+        "tags": [
+          "AI",
+          "ClaudeCode",
+          "個人開発",
+          "生成AI",
+          "ポエム"
+        ],
+        "private": false
+      },
+      "zenn": {
+        "emoji": "🕳️",
+        "type": "idea",
+        "topics": [
+          "ai",
+          "claudecode",
+          "個人開発",
+          "生成ai"
+        ],
+        "published": false
+      },
       "qiitaUrl": "",
       "zennUrl": ""
     },
     {
       "slug": "02-ai-council-idea-generation",
       "ref": "02",
-      "qiita": { "tags": ["AI", "ClaudeCode", "個人開発", "生成AI", "プロジェクト管理"], "private": false },
-      "zenn": { "emoji": "🗳️", "type": "idea", "topics": ["ai", "claudecode", "個人開発", "生成ai"], "published": false },
+      "qiita": {
+        "tags": [
+          "AI",
+          "ClaudeCode",
+          "個人開発",
+          "生成AI",
+          "プロジェクト管理"
+        ],
+        "private": false
+      },
+      "zenn": {
+        "emoji": "🗳️",
+        "type": "idea",
+        "topics": [
+          "ai",
+          "claudecode",
+          "個人開発",
+          "生成ai"
+        ],
+        "published": false
+      },
       "qiitaUrl": "",
       "zennUrl": ""
     },
     {
       "slug": "03-ai-build-council-implementation",
       "ref": "03",
-      "qiita": { "tags": ["AI", "ClaudeCode", "テスト", "生成AI", "ChromeExtension"], "private": false },
-      "zenn": { "emoji": "🚦", "type": "tech", "topics": ["ai", "claudecode", "テスト", "chrome"], "published": false },
+      "qiita": {
+        "tags": [
+          "AI",
+          "ClaudeCode",
+          "テスト",
+          "生成AI",
+          "ChromeExtension"
+        ],
+        "private": false
+      },
+      "zenn": {
+        "emoji": "🚦",
+        "type": "tech",
+        "topics": [
+          "ai",
+          "claudecode",
+          "テスト",
+          "chrome"
+        ],
+        "published": false
+      },
       "qiitaUrl": "",
       "zennUrl": ""
     },
     {
-      "slug": "04-chrome-ext-wareki-converter",
+      "slug": "04-wareki-pitfalls",
       "ref": "04",
-      "qiita": { "tags": ["Java", "和暦", "ChromeExtension", "日付", "個人開発"], "private": false },
-      "zenn": { "emoji": "📅", "type": "tech", "topics": ["java", "chrome", "javascript", "個人開発"], "published": false },
+      "qiita": {
+        "tags": [
+          "Java",
+          "和暦",
+          "日付",
+          "ChromeExtension",
+          "初心者"
+        ],
+        "private": false
+      },
+      "zenn": {
+        "emoji": "📅",
+        "type": "tech",
+        "topics": [
+          "java",
+          "和暦",
+          "chrome",
+          "javascript"
+        ],
+        "published": false
+      },
       "qiitaUrl": "",
       "zennUrl": ""
     }
