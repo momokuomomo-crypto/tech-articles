@@ -5,24 +5,20 @@ type: "idea"
 topics: ["ai", "claudecode", "個人開発", "生成ai"]
 published: false
 ---
-AIを開発に使うとき、ひとつのセッションにすべてを任せるのをやめました。役割を分けて、複数のチェックを通す仕組みを作っています。議論用と実装用の2つを用意し、その流れでChrome拡張を1本、Chromeウェブストアまで出しました。この記事は全体の流れを説明します。
+AIを開発に使うとき、ひとつのセッションにすべてを任せるのをやめました。役割を分けて、複数のチェックを通す仕組みを作っています。
 
-## 作ったもの
+道具は2つ作りました。何を作るかを決める**議論役**と、どう作るかを決めて実装する**実装役**です。どちらもClaude Codeのスキルとして書きました。この2つを通して、Chrome拡張を1本、Chromeウェブストアまで出しています。作ったのは西暦と和暦を相互変換する拡張です。
 
-| | 役割 | 記事 |
-|---|---|---|
-| [ai-council_v2](https://github.com/momokuomomo-crypto/ai-council_v2) | 何を作るかを決める | 案出し編 |
-| [ai-build-council](https://github.com/momokuomomo-crypto/ai-build-council) | どう作るかを決めて実装する | 実装編 |
-| [chrome-ext-wareki-converter](https://github.com/momokuomomo-crypto/chrome-ext-wareki-converter) | 実際に作って公開したもの | アプリ編 |
+使うのはClaude Code（サブスクリプション）とCodex CLI（ChatGPTプラン）の2つだけです。APIの従量課金は使っていません。
 
-どちらもClaude Codeのスキルです。使うのはClaude Code（サブスクリプション）とCodex CLI（ChatGPTプラン）の2つだけです。APIの従量課金は使っていません。
+## 全体の流れ
 
 ```text
  テーマ「Chrome拡張で何を作るか」
         │
         ▼
 ┌───────────────────────┐
-│ ai-council_v2         │  議長・提案・査読の3席
+│ 議論役                 │  議長・提案・査読の3席
 │ 何を作るかを決める      │  独立意見 → 相互レビュー → 統合・裁定
 └───────────────────────┘
         │  稟議書（裁定つき）
@@ -31,7 +27,7 @@ AIを開発に使うとき、ひとつのセッションにすべてを任せる
         │
         ▼
 ┌───────────────────────┐
-│ ai-build-council      │  Stage 0〜7、工程ごとにゲート
+│ 実装役                 │  Stage 0〜7、工程ごとにゲート
 │ 設計・実装・レビュー     │
 └───────────────────────┘
         │  動くコード
@@ -48,7 +44,7 @@ AIを開発に使うとき、ひとつのセッションにすべてを任せる
 
 そこで、別のセッション、できれば別のモデルに、前の出力を見せずに検討させます。前提を共有していない相手が読むと、ひとつでは出てこない指摘が出ます。
 
-ai-council では3席に分けました。
+議論役は3席に分けました。
 
 | 席 | モデル | 役割 |
 |---|---|---|
@@ -83,11 +79,11 @@ ai-council では3席に分けました。
 
 ## 2つのツールをつなげない
 
-ai-council と ai-build-council は、コード上でつながっていません。連携はファイルを渡すだけです。
+議論役と実装役は、コード上でつながっていません。連携はファイルを渡すだけです。
 
 つなげない理由は、間に人間の承認を置くためです。稟議書が出た直後に実装が始まると、承認する時間がなくなります。
 
-実装側は議論側の結論を前提としても扱いません。ai-build-council の README にはこう書いています。
+実装役は議論役の結論を前提としても扱いません。実装役のREADMEにはこう書いています。
 
 > ai-councilの成果物をそのまま採用することは目的としない。
 
@@ -95,7 +91,7 @@ ai-council と ai-build-council は、コード上でつながっていません
 
 ## 工程を定義しておく効果
 
-ai-build-council は工程を Stage 0 から 7 まで定義し、到達状況を `state.json` に記録します。
+実装役は工程を Stage 0 から 7 まで定義し、到達状況を `state.json` に記録します。
 
 ```json
 "not_done": [
@@ -149,4 +145,13 @@ ai-build-council は工程を Stage 0 から 7 まで定義し、到達状況を
 1. 本記事（全体の流れ）
 2. AI3席会合で55案出したら、在庫が積み上がった話
 3. AIに実装させるゲート設計と、自動テスト99件をすり抜けた6件のバグ
-4. 和暦変換Chrome拡張を作って公開した話
+4. 和暦変換のChrome拡張を作って公開した
+
+## リンク
+
+| | |
+|---|---|
+| 議論役のスキル | https://github.com/momokuomomo-crypto/ai-council_v2 |
+| 実装役のスキル | https://github.com/momokuomomo-crypto/ai-build-council |
+| 公開した拡張 | https://github.com/momokuomomo-crypto/chrome-ext-wareki-converter |
+| Chromeウェブストア | https://chromewebstore.google.com/detail/pcgbpaagcljfakbhmoiaoekmfbfdfpob |
