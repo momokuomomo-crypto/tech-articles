@@ -4,7 +4,7 @@
 
 ## 一記事完結になっていない
 
-各記事は単独で読んで意味が通る必要がある（`skills/ai-writing-council/references/self-contained.md`）。
+各記事は単独で読んで意味が通る必要がある（[self-contained.md](https://github.com/momokuomomo-crypto/ai-writing-council/blob/main/skills/ai-writing-council/references/self-contained.md)）。
 現状、記事をまたいだ前提の持ち越しがある。
 
 | 記事 | 箇所 | 内容 |

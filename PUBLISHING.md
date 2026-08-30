@@ -2,6 +2,16 @@
 
 Qiita と Zenn の両方へ、同じ本文を投稿するための手順書。
 
+## 関連リポジトリ
+
+記事を書くときの推敲・添削は、別リポジトリのスキルが担当する。
+
+- [ai-writing-council](https://github.com/momokuomomo-crypto/ai-writing-council)
+  — 原案・規範適用・独立添削を別の席に分けて記事を仕上げるClaude Codeスキル。
+  文章規範のチェッカー（`lint-ja` / `lint-style`）もこちらにある
+
+このリポジトリは記事本体と、Qiita / Zenn への投稿環境だけを持つ。
+
 ## 前提：ファイルの役割
 
 **本文を書き換えるのは `drafts/` だけ。** `public/` と `articles/` は自動生成されるので、直接編集しても次回の同期で消える。
