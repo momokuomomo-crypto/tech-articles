@@ -2,26 +2,26 @@
   "_comment": "記事ごとのメタ情報。本文とタイトル(H1)は drafts/<slug>.md が唯一の正。qiitaUrl / zennUrl は公開後に埋めると、本文中の @NN リンクがそのURLへ解決される。",
   "articles": [
     {
-      "slug": "01-chrome-extensions",
+      "slug": "01-wareki-converter",
       "ref": "01",
       "qiita": {
         "tags": [
           "ChromeExtension",
-          "Chrome",
+          "和暦",
+          "日付",
           "個人開発",
-          "生産性",
-          "ツール"
+          "Chrome"
         ],
         "private": false
       },
       "zenn": {
-        "emoji": "🧩",
+        "emoji": "📅",
         "type": "idea",
         "topics": [
           "chrome",
+          "和暦",
           "個人開発",
-          "javascript",
-          "ツール"
+          "javascript"
         ],
         "published": false
       },
@@ -42,7 +42,7 @@
         "private": false
       },
       "zenn": {
-        "emoji": "📅",
+        "emoji": "🕳️",
         "type": "tech",
         "topics": [
           "java",

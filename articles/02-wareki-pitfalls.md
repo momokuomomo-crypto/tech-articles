@@ -1,6 +1,6 @@
 ---
 title: "和暦変換で踏む6つの罠をJDKで確かめた"
-emoji: "📅"
+emoji: "🕳️"
 type: "tech"
 topics: ["java", "和暦", "chrome", "javascript"]
 published: false
