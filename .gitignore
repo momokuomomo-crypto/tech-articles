@@ -1,2 +1,13 @@
-.remote
 node_modules
+.remote
+
+# 認証情報。qiita-cli は起動時に .env を読むため、
+# トークンを書くとそのままコミットされる
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+.DS_Store

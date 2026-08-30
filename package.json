@@ -1,13 +1,16 @@
 {
   "name": "tech-articles",
   "version": "1.0.0",
-  "description": "Qiita articles managed with qiita-cli",
+  "description": "Qiita / Zenn へクロスポストする記事リポジトリ",
   "scripts": {
-    "preview": "qiita preview",
-    "new": "qiita new",
-    "publish": "qiita publish --all",
-    "pull": "qiita pull",
-    "login": "qiita login"
+    "sync": "node scripts/sync-articles.mjs",
+    "sync:check": "node scripts/sync-articles.mjs --check",
+    "qiita:preview": "qiita preview",
+    "qiita:login": "qiita login",
+    "qiita:publish": "qiita publish --all",
+    "qiita:pull": "qiita pull",
+    "zenn:preview": "zenn preview",
+    "zenn:new": "zenn new:article"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,8 @@
   },
   "homepage": "https://github.com/momokuomomo-crypto/tech-articles#readme",
   "devDependencies": {
-    "@qiita/qiita-cli": "^1.10.0"
+    "@qiita/qiita-cli": "^1.10.0",
+    "zenn-cli": "^0.5.3"
   },
   "private": true
 }
